@@ -98,6 +98,7 @@ export class EuiSuperDatePicker extends Component {
     end: 'now',
     isPaused: true,
     refreshInterval: 0,
+    maxRangeHours: -1,
     commonlyUsedRanges: [
       { start: 'now/d', end: 'now/d', label: 'Today' },
       { start: 'now-1d/d', end: 'now-1d/d', label: 'Yesterday' },
