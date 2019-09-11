@@ -16,7 +16,7 @@ import { EuiDatePickerRange } from '../date_picker_range';
 import { EuiFormControlLayout } from '../../form';
 import { EuiFlexGroup, EuiFlexItem } from '../../flex';
 
-function isRangeInvalid(start, end) {
+function isRangeInvalid(start, end, maxRangeHours) {
   if (start === 'now' && end === 'now') {
     return true;
   }
@@ -29,6 +29,11 @@ function isRangeInvalid(start, end) {
   if (startMoment.isAfter(endMoment)) {
     return true;
   }
+  const timeRange = endMoment.diff(startMoment) / 1000 / 60 / 60;
+  if (maxRangeHours > 0 && (timeRange > maxRangeHours)) {
+    return true;
+  }
+
 
   return false;
 }
@@ -47,6 +52,11 @@ export class EuiSuperDatePicker extends Component {
      * absolute date in the format 'YYYY-MM-DDTHH:mm:ss.sssZ'
      */
     end: PropTypes.string,
+    /**
+     * Number in hours for the maximum allowable search time range,
+     * defaults to -1 for no limit.
+     */
+    maxRangeHours: PropTypes.number,
     /**
      * Callback for when the time changes. Called with { start, end, isQuickSelection, isInvalid }
      */
@@ -110,11 +120,11 @@ export class EuiSuperDatePicker extends Component {
       return {
         prevProps: {
           start: nextProps.start,
-          end: nextProps.end,
+          end: nextProps.end
         },
         start: nextProps.start,
         end: nextProps.end,
-        isInvalid: isRangeInvalid(nextProps.start, nextProps.end),
+        isInvalid: isRangeInvalid(nextProps.start, nextProps.end, nextProps.maxRangeHours),
         hasChanged: false,
         showPrettyDuration: showPrettyDuration(nextProps.start, nextProps.end, nextProps.commonlyUsedRanges),
       };
@@ -129,17 +139,18 @@ export class EuiSuperDatePicker extends Component {
     const {
       start,
       end,
+      maxRangeHours,
       commonlyUsedRanges
     } = this.props;
 
     this.state = {
       prevProps: {
         start: props.start,
-        end: props.end,
+        end: props.end
       },
       start,
       end,
-      isInvalid: isRangeInvalid(start, end),
+      isInvalid: isRangeInvalid(start, end, maxRangeHours),
       hasChanged: false,
       showPrettyDuration: showPrettyDuration(start, end, commonlyUsedRanges),
       isStartDatePopoverOpen: false,
@@ -148,7 +159,7 @@ export class EuiSuperDatePicker extends Component {
   }
 
   setTime = ({ start, end }) => {
-    const isInvalid = isRangeInvalid(start, end);
+    const isInvalid = isRangeInvalid(start, end, this.props.maxRangeHours);
 
     this.setState({
       start,

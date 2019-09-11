@@ -57,7 +57,7 @@ async function ensureMasterBranch() {
   const currentBranch = await repo.getCurrentBranch();
   const currentBranchName = currentBranch.shorthand();
 
-  if (currentBranchName !== 'master') {
+  if (currentBranchName !== 'atlastix-master') {
     console.error(`Unable to release: currently on branch "${currentBranchName}", expected "master"`);
     process.exit(1);
   }
@@ -69,10 +69,10 @@ async function getVersionTypeFromChangelog() {
   const changelog = fs.readFileSync(pathToChangelog).toString();
 
   // Sanity check, if the changelog contains "No public interface changes"then we shouldn't be releasing
-  if (changelog.indexOf('No public interface changes') !== -1) {
-    console.error(`Unable to release: CHANGELOG.md indicates "No public interface changes"`);
-    process.exit(1);
-  }
+  // if (changelog.indexOf('No public interface changes') !== -1) {
+  //   console.error(`Unable to release: CHANGELOG.md indicates "No public interface changes"`);
+  //   process.exit(1);
+  // }
 
   // get contents between the first two headings
   // changelog headings always use ##, this matches:

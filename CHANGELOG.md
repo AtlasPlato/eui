@@ -4,6 +4,14 @@ No public interface changes since `6.10.7`.
 
 ## [`6.10.7`](https://github.com/elastic/eui/tree/v6.10.7)
 
+No public interface changes since `1.0.1`.
+
+## [`1.0.1`](https://github.com/elastic/eui/tree/v1.0.1)
+
+No public interface changes since `6.10.7`.
+
+## [`6.10.7`](https://github.com/elastic/eui/tree/v6.10.7)
+
 - Changed `EuiNavDrawer` to close on any link click ([#1773](https://github.com/elastic/eui/pull/1773))
 
 ## [`6.10.6`](https://github.com/elastic/eui/tree/v6.10.6)

@@ -136,6 +136,7 @@ export default class extends Component {
           recentlyUsedRanges={this.state.recentlyUsedRanges}
           showUpdateButton={this.state.showUpdateButton}
           isAutoRefreshOnly={this.state.isAutoRefreshOnly}
+          maxRangeHours={48}
         />
 
         <EuiSpacer />
