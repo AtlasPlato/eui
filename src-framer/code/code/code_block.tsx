@@ -1,8 +1,8 @@
 import {
   FONT_SIZES,
   PADDING_SIZES,
-} from '@elastic/eui/lib/components/code/_code_block.js';
-import { EuiCodeBlock } from '@elastic/eui/lib/components/code/code_block.js';
+} from '@atlastix/eui/lib/components/code/_code_block.js';
+import { EuiCodeBlock } from '@atlastix/eui/lib/components/code/code_block.js';
 import { ControlType, PropertyControls } from 'framer';
 import React from 'react';
 

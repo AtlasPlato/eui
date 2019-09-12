@@ -2,8 +2,8 @@ import {
   COLORS,
   EuiBadge,
   ICON_SIDES,
-} from '@elastic/eui/lib/components/badge/badge.js';
-import { ICON_TYPES } from '@elastic/eui/lib/components/icon/index.js';
+} from '@atlastix/eui/lib/components/badge/badge.js';
+import { ICON_TYPES } from '@atlastix/eui/lib/components/icon/index.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

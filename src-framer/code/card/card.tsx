@@ -2,13 +2,13 @@ import {
   ALIGNMENTS,
   EuiCard,
   LAYOUT_ALIGNMENTS,
-} from '@elastic/eui/lib/components/card/card.js';
+} from '@atlastix/eui/lib/components/card/card.js';
 import {
   COLORS,
   EuiIcon,
   SIZES,
   TYPES,
-} from '@elastic/eui/lib/components/icon/icon.js';
+} from '@atlastix/eui/lib/components/icon/icon.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size.tsx';

@@ -3,8 +3,8 @@ import {
   EuiButton,
   ICON_SIDES,
   SIZES,
-} from '@elastic/eui/lib/components/button/button.js';
-import { ICON_TYPES } from '@elastic/eui/lib/components/icon/index.js';
+} from '@atlastix/eui/lib/components/button/button.js';
+import { ICON_TYPES } from '@atlastix/eui/lib/components/icon/index.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size';

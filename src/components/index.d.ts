@@ -34,7 +34,7 @@
 /// <reference path="./toast/index.d.ts" />
 /// <reference path="./tool_tip/index.d.ts" />
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   // @ts-ignore
-  export * from '@elastic/eui/src/components/common';
+  export * from '@atlastix/eui/src/components/common';
 }

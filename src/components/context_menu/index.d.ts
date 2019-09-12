@@ -9,7 +9,7 @@ import {
 } from 'react';
 import * as React from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * context menu panel type defs
    *

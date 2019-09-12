@@ -24,20 +24,20 @@ function hasParentIndex(pathToFile) {
 }
 
 const generator = dtsGenerator({
-  name: '@elastic/eui',
+  name: '@atlastix/eui',
   project: baseDir,
   out: 'eui.d.ts',
   exclude: ['node_modules/**/*.d.ts', 'src/custom_typings/**/*.d.ts'],
   resolveModuleId(params) {
     if (path.basename(params.currentModuleId) === 'index' && !hasParentIndex(path.resolve(baseDir, params.currentModuleId))) {
-      // this module is exporting from an `index(.d)?.ts` file, declare its exports straight to @elastic/eui module
-      return '@elastic/eui';
+      // this module is exporting from an `index(.d)?.ts` file, declare its exports straight to @atlastix/eui module
+      return '@atlastix/eui';
     } else {
-      // otherwise export as the module's path relative to the @elastic/eui namespace
+      // otherwise export as the module's path relative to the @atlastix/eui namespace
       if (params.currentModuleId.endsWith('/index')) {
-        return path.join('@elastic/eui', path.dirname(params.currentModuleId));
+        return path.join('@atlastix/eui', path.dirname(params.currentModuleId));
       } else {
-        return path.join('@elastic/eui', params.currentModuleId);
+        return path.join('@atlastix/eui', params.currentModuleId);
       }
     }
   },
@@ -49,7 +49,7 @@ const generator = dtsGenerator({
 
     if (isRelativeImport) {
       // if importing from an `index` file (directly or targeting a directory with an index),
-      // then if there is no parent index file this should import from @elastic/eui
+      // then if there is no parent index file this should import from @atlastix/eui
       const importPathTarget = resolve.sync(
         params.importedModuleId,
         {
@@ -62,12 +62,12 @@ const generator = dtsGenerator({
       const isModuleIndex = isIndexFile && !hasParentIndex(importPathTarget);
 
       if (isModuleIndex) {
-        // importing an `index` file, in `resolveModuleId` above we change those modules to '@elastic/eui'
-        return '@elastic/eui';
+        // importing an `index` file, in `resolveModuleId` above we change those modules to '@atlastix/eui'
+        return '@atlastix/eui';
       } else {
-        // importing from a non-index TS source file, keep the import path but re-scope it to '@elastic/eui' namespace
+        // importing from a non-index TS source file, keep the import path but re-scope it to '@atlastix/eui' namespace
         return path.join(
-          '@elastic/eui',
+          '@atlastix/eui',
           path.dirname(params.currentModuleId),
           params.importedModuleId
         );
@@ -86,6 +86,6 @@ generator.then(() => {
     defsFilePath,
     fs.readFileSync(defsFilePath).toString()
       .replace(/\/\/\/\W+<reference.*/g, '') // 1.
-      .replace(/import\(\"src\/(.*?)\"\)/g, 'import("@elastic/eui/src/$1")') // 2.
+      .replace(/import\(\"src\/(.*?)\"\)/g, 'import("@atlastix/eui/src/$1")') // 2.
   );
 });

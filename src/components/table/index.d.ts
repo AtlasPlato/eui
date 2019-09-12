@@ -12,7 +12,7 @@ import {
   TdHTMLAttributes
 } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * table type defs
    *

@@ -3,7 +3,7 @@ import { IconType } from '../icon'
 
 import { SFC, ButtonHTMLAttributes, AnchorHTMLAttributes, MouseEventHandler, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   type EuiButtonPropsForButtonOrLink<Props> = (
     (Props & { onClick: MouseEventHandler<HTMLButtonElement> } & ButtonHTMLAttributes<HTMLButtonElement>) |
     (Props & { href: string; onClick: MouseEventHandler<HTMLAnchorElement> } & AnchorHTMLAttributes<HTMLAnchorElement>) |

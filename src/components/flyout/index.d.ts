@@ -1,6 +1,6 @@
 import { CommonProps } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export interface EuiFlyoutProps {
     onClose: () => void;
     size?: 's' | 'm' | 'l';

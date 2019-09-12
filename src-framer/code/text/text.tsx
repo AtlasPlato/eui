@@ -1,6 +1,6 @@
-import { EuiText, TEXT_SIZES } from '@elastic/eui/lib/components/text/text';
-import { ALIGNMENTS } from '@elastic/eui/lib/components/text/text_align';
-import { COLORS } from '@elastic/eui/lib/components/text/text_color';
+import { EuiText, TEXT_SIZES } from '@atlastix/eui/lib/components/text/text';
+import { ALIGNMENTS } from '@atlastix/eui/lib/components/text/text_align';
+import { COLORS } from '@atlastix/eui/lib/components/text/text_color';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size';

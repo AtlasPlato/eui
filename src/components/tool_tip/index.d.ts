@@ -2,7 +2,7 @@ import { ReactElement, ReactNode, SFC } from 'react';
 import { EuiIcon } from '../icon';
 import { Omit, PropsOf } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export type ToolTipPositions =
     | 'top'
     | 'right'

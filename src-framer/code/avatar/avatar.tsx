@@ -2,7 +2,7 @@ import {
   EuiAvatar,
   SIZES,
   TYPES,
-} from '@elastic/eui/lib/components/avatar/avatar.js';
+} from '@atlastix/eui/lib/components/avatar/avatar.js';
 import { ControlType, PropertyControls } from 'framer';
 import React from 'react';
 

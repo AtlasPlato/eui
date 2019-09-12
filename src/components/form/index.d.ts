@@ -15,7 +15,7 @@ import { CommonProps } from '../common';
 
 import { SFC, FormHTMLAttributes, ReactNode } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * @see './form.js'
    */

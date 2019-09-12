@@ -3,7 +3,7 @@ import {
   EuiIcon,
   SIZES,
   TYPES,
-} from '@elastic/eui/lib/components/icon/icon.js';
+} from '@atlastix/eui/lib/components/icon/icon.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

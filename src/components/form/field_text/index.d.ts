@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import { SFC, InputHTMLAttributes, Ref } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   /**
    * text field type defs

@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import { SFC, ReactNode, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * @see './form_row.js'
    */

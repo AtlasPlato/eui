@@ -13,7 +13,7 @@ import {
   EuiButton,
   EuiCallOut,
   EuiPanel,
-} from '@elastic/eui';
+} from '@atlastix/eui';
 ```
 
 ### Services
@@ -21,8 +21,8 @@ import {
 Most services are published from the `lib/services` directory. Some are published from their module directories in this directory.
 
 ```js
-import { keyCodes } from '@elastic/eui/lib/services';
-import { Timer } from '@elastic/eui/lib/services/time';
+import { keyCodes } from '@atlastix/eui/lib/services';
+import { Timer } from '@atlastix/eui/lib/services/time';
 ```
 
 ### Test
@@ -30,7 +30,7 @@ import { Timer } from '@elastic/eui/lib/services/time';
 Test utilities are published from the `lib/test` directory.
 
 ```js
-import { findTestSubject } from '@elastic/eui/lib/test';
+import { findTestSubject } from '@atlastix/eui/lib/test';
 ```
 
 ## Requirements and dependencies
@@ -52,14 +52,14 @@ You can consume EUI in standalone projects, such as plugins and prototypes.
 Most of the time, you just need the CSS, which provides the styling for the React components. In this case, you can use Webpack to import the compiled EUI CSS with the `style`,`css`, and `postcss` loaders.
 
 ```js
-import '@elastic/eui/dist/eui_theme_light.css';
+import '@atlastix/eui/dist/eui_theme_light.css';
 ```
 
 If you want access to the Sass variables, functions, and mixins in EUI then you'll need to import the SCSS file. This will require `style`, `css`, `postcss`, and `sass` loaders. You'll also want to import the SCSS file into one of your own SCSS files, to gain access to these variables, functions, and mixins.
 
 ```scss
 // index.scss
-@import '../node_modules/@elastic/eui/src/theme_light.scss';
+@import '../node_modules/@atlastix/eui/src/theme_light.scss';
 ```
 
 By default, EUI ships with a font stack that includes some outside, open source fonts. If your system is internet available you can include these by adding the following imports to your SCSS/CSS files, otherwise you'll need to bundle the physical fonts in your build. EUI will drop to System Fonts (which you may prefer) in their absence.
@@ -78,7 +78,7 @@ The Sass variables are also made available for consumption as json files. This e
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import styled, { ThemeProvider } from 'styled-components';
-import * as euiVars from '@elastic/eui/dist/eui_theme_k6_light.json';
+import * as euiVars from '@atlastix/eui/dist/eui_theme_k6_light.json';
 
 const CustomComponent = styled.div`
   color: ${props => props.theme.euiColorPrimary};

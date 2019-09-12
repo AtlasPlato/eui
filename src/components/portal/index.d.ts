@@ -1,4 +1,4 @@
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   import { SFC } from 'react';
 
   /**

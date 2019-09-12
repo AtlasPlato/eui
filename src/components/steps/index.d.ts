@@ -1,7 +1,7 @@
 import { SFC, ReactNode, HTMLAttributes, MouseEventHandler } from 'react';
 import { CommonProps, Omit } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export type EuiStepStatus = 'complete' | 'incomplete' | 'warning' | 'danger' | 'disabled'
 
   /**

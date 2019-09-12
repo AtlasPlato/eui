@@ -2,7 +2,7 @@ import { HTMLAttributes, Component, ReactNode } from 'react';
 
 import { CommonProps } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export type EuiAccordionSize = 'none' | 'xs' | 's' | 'm' | 'l' | 'xl';
 
   export interface EuiAccordionProps {

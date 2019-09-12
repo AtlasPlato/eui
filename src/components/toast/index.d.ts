@@ -3,7 +3,7 @@ import { IconType } from '../icon';
 
 import { Component, SFC, HTMLAttributes, ReactChild } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * EuiToast type def
    *

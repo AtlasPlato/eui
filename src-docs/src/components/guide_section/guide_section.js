@@ -316,10 +316,10 @@ export class GuideSection extends Component {
     const codeClass = nameToCodeClassMap[name];
     const { code } = this.props.source.find(sourceObject => sourceObject.type === name);
     const npmImports = code
-      .replace(/(from )'(..\/)+src\/components(\/?';)/, `from '@elastic/eui';`)
-      .replace(/(from )'(..\/)+src\/services(\/?';)/, `from '@elastic/eui/lib/services';`)
-      .replace(/(from )'(..\/)+src\/experimental(\/?';)/, `from '@elastic/eui/lib/experimental';`)
-      .replace(/(from )'(..\/)+src\/components\/.*?';/, `from '@elastic/eui';`);
+      .replace(/(from )'(..\/)+src\/components(\/?';)/, `from '@atlastix/eui';`)
+      .replace(/(from )'(..\/)+src\/services(\/?';)/, `from '@atlastix/eui/lib/services';`)
+      .replace(/(from )'(..\/)+src\/experimental(\/?';)/, `from '@atlastix/eui/lib/experimental';`)
+      .replace(/(from )'(..\/)+src\/components\/.*?';/, `from '@atlastix/eui';`);
 
     return (
       <div key={name} ref={name}>

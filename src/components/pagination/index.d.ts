@@ -3,7 +3,7 @@ import { CommonProps, Omit } from '../common';
 
 import { HTMLAttributes, SFC } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * pagination type defs
    *

@@ -4,7 +4,7 @@ import { IconColor, IconType } from '../icon'
 
 import { SFC, ReactNode, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * EuiEmptyPrompt type defs
    *

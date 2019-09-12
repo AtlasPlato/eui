@@ -12,13 +12,13 @@ You should check out our [living style guide][docs], which contains many example
 To install the Elastic UI Framework into an existing project, use the `yarn` CLI (`npm` is not supported).
 
 ```
-yarn add @elastic/eui
+yarn add @atlastix/eui
 ```
 
 Note that EUI itself has some dependencies itself mostly around management of dates and times. If you are installing it into a blank project you will need to install the following with it. You can read more about other ways to [consume EUI][consuming].
 
 ```
-yarn add @elastic/eui @elastic/datemath moment
+yarn add @atlastix/eui @elastic/datemath moment
 ```
 
 

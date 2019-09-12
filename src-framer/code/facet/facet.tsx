@@ -1,10 +1,10 @@
-import { EuiFacetButton } from '@elastic/eui/lib/components/facet/facet_button.js';
+import { EuiFacetButton } from '@atlastix/eui/lib/components/facet/facet_button.js';
 import {
   COLORS,
   EuiIcon,
   SIZES,
   TYPES,
-} from '@elastic/eui/lib/components/icon/icon.js';
+} from '@atlastix/eui/lib/components/icon/icon.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

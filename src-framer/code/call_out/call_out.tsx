@@ -2,8 +2,8 @@ import {
   COLORS,
   EuiCallOut,
   SIZES,
-} from '@elastic/eui/lib/components/call_out/call_out.js';
-import { ICON_TYPES } from '@elastic/eui/lib/components/icon/index.js';
+} from '@atlastix/eui/lib/components/call_out/call_out.js';
+import { ICON_TYPES } from '@atlastix/eui/lib/components/icon/index.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size.tsx';

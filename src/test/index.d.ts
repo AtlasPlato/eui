@@ -1,6 +1,6 @@
 import { ShallowWrapper, ReactWrapper } from 'enzyme';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export function findTestSubject<T extends ShallowWrapper | ReactWrapper> (
     mountedComponent: T,
     testSubjectSelector: string

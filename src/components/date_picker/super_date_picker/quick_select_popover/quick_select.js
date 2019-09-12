@@ -4,26 +4,15 @@ import React, { Component, Fragment } from 'react';
 import moment from 'moment';
 import dateMath from '@elastic/datemath';
 
-import { EuiButton, EuiButtonIcon } from '../../../button';
+import { EuiButtonIcon } from '../../../button';
 import { EuiFlexGroup, EuiFlexItem } from '../../../flex';
 import { EuiTitle } from '../../../title';
 import { EuiSpacer } from '../../../spacer';
-import { EuiFormRow, EuiSelect, EuiFieldNumber } from '../../../form';
 import { EuiToolTip } from '../../../tool_tip';
 import { EuiHorizontalRule } from '../../../horizontal_rule';
 
-import { timeUnits } from '../time_units';
-
 const LAST = 'last';
 const NEXT = 'next';
-
-const timeTenseOptions = [
-  { value: LAST, text: 'Last' },
-  { value: NEXT, text: 'Next' },
-];
-const timeUnitsOptions = Object.keys(timeUnits).map(key => {
-  return { value: key, text: `${timeUnits[key]}s` };
-});
 
 export class EuiQuickSelect extends Component {
   constructor(props) {
@@ -135,49 +124,6 @@ export class EuiQuickSelect extends Component {
           </EuiFlexItem>
         </EuiFlexGroup>
         <EuiSpacer size="s" />
-        <EuiFlexGroup gutterSize="s" responsive={false}>
-          <EuiFlexItem>
-            <EuiFormRow compressed>
-              <EuiSelect
-                aria-label="Quick time tense"
-                value={this.state.timeTense}
-                options={timeTenseOptions}
-                onChange={this.onTimeTenseChange}
-              />
-            </EuiFormRow>
-          </EuiFlexItem>
-          <EuiFlexItem>
-            <EuiFormRow compressed>
-              <EuiFieldNumber
-                aria-label="Quick time value"
-                value={this.state.timeValue}
-                onChange={this.onTimeValueChange}
-              />
-            </EuiFormRow>
-          </EuiFlexItem>
-          <EuiFlexItem>
-            <EuiFormRow compressed>
-              <EuiSelect
-                aria-label="Quick time units"
-                value={this.state.timeUnits}
-                options={timeUnitsOptions}
-                onChange={this.onTimeUnitsChange}
-              />
-            </EuiFormRow>
-          </EuiFlexItem>
-          <EuiFlexItem grow={false}>
-            <EuiFormRow>
-              <EuiButton
-                className="euiQuickSelect__applyButton"
-                size="s"
-                onClick={this.applyQuickSelect}
-                disabled={this.state.timeValue === '' || this.state.timeValue <= 0}
-              >
-                Apply
-              </EuiButton>
-            </EuiFormRow>
-          </EuiFlexItem>
-        </EuiFlexGroup>
         <EuiHorizontalRule margin="s" />
       </Fragment>
     );

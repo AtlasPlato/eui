@@ -1,5 +1,5 @@
-import { EuiFieldSearch } from '@elastic/eui/lib/components/form/field_search/field_search.js';
-import { EuiFormRow } from '@elastic/eui/lib/components/form/form_row/form_row.js';
+import { EuiFieldSearch } from '@atlastix/eui/lib/components/form/field_search/field_search.js';
+import { EuiFormRow } from '@atlastix/eui/lib/components/form/form_row/form_row.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

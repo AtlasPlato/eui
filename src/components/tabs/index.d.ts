@@ -1,7 +1,7 @@
 import { MouseEventHandler, ReactNode, SFC, HTMLAttributes } from 'react';
 import { CommonProps } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   type TAB_SIZES = 's' | 'm';
 
   type EuiTabProps = {

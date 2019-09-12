@@ -3,7 +3,7 @@ import { IconType } from '../../icon';
 
 import { ReactNode, SFC, InputHTMLAttributes, Ref } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   /**
    * text field type defs

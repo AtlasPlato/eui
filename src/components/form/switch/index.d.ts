@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import { SFC, InputHTMLAttributes, ReactNode } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * @see './switch.js'
    */

@@ -5,10 +5,10 @@ import {
   EuiComboBoxOptionProps,
   EuiComboBoxOptionsListPosition,
   EuiComboBoxOptionsListProps,
-} from '@elastic/eui';
+} from '@atlastix/eui';
 import { RefCallback } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export type EuiComboBoxOptionProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     label: string,
     isGroupLabelOption?: boolean,

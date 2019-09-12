@@ -1,5 +1,5 @@
-import DarkCSS from '!!raw-loader!@elastic/eui/dist/eui_theme_dark.css';
-import LightCSS from '!!raw-loader!@elastic/eui/dist/eui_theme_light.css';
+import DarkCSS from '!!raw-loader!@atlastix/eui/dist/eui_theme_dark.css';
+import LightCSS from '!!raw-loader!@atlastix/eui/dist/eui_theme_light.css';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from './frame_size.tsx';

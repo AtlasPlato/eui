@@ -1,5 +1,5 @@
-import { EuiFieldPassword } from '@elastic/eui/lib/components/form/field_password/field_password.js';
-import { EuiFormRow } from '@elastic/eui/lib/components/form/form_row/form_row.js';
+import { EuiFieldPassword } from '@atlastix/eui/lib/components/form/field_password/field_password.js';
+import { EuiFormRow } from '@atlastix/eui/lib/components/form/form_row/form_row.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

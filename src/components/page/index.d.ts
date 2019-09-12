@@ -3,7 +3,7 @@ import { CommonProps } from '../common';
 
 import { SFC, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export interface EuiPageWidthProps {
     /**
      * Sets the max-width of the page,

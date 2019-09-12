@@ -3,9 +3,9 @@ import {
   TYPES,
   ALIGNMENTS,
   TEXT_STYLES,
-} from '@elastic/eui/lib/components/description_list/description_list.js';
-import { EuiDescriptionListTitle } from '@elastic/eui/lib/components/description_list/description_list_title.js';
-import { EuiDescriptionListDescription } from '@elastic/eui/lib/components/description_list/description_list_description.js';
+} from '@atlastix/eui/lib/components/description_list/description_list.js';
+import { EuiDescriptionListTitle } from '@atlastix/eui/lib/components/description_list/description_list_title.js';
+import { EuiDescriptionListDescription } from '@atlastix/eui/lib/components/description_list/description_list_description.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

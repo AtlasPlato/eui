@@ -4,7 +4,7 @@ import { IconType } from '../icon';
 import ReactDatePicker, { ReactDatePickerProps } from 'react-datepicker';
 import { Moment } from 'moment';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   interface OnTimeChangeProps {
     start: string;
     end: string;

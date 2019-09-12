@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import {SFC, ReactNode, Ref, OptionHTMLAttributes, SelectHTMLAttributes} from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * @see './select.js'
    */

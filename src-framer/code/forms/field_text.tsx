@@ -1,6 +1,6 @@
-import { EuiFieldText } from '@elastic/eui/lib/components/form/field_text/field_text.js';
-import { EuiFormRow } from '@elastic/eui/lib/components/form/form_row/form_row.js';
-import { ICON_TYPES } from '@elastic/eui/lib/components/icon/index.js';
+import { EuiFieldText } from '@atlastix/eui/lib/components/form/field_text/field_text.js';
+import { EuiFormRow } from '@atlastix/eui/lib/components/form/form_row/form_row.js';
+import { ICON_TYPES } from '@atlastix/eui/lib/components/icon/index.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 

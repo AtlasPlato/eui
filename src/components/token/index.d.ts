@@ -2,7 +2,7 @@ import { SFC, HTMLAttributes } from 'react';
 import { CommonProps } from '../common';
 import { IconType } from '../icon';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   /**
    * token type defs

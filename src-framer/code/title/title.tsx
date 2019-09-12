@@ -2,7 +2,7 @@ import {
   EuiTitle,
   TEXT_TRANSFORM,
   TITLE_SIZES,
-} from '@elastic/eui/lib/components/title/title';
+} from '@atlastix/eui/lib/components/title/title';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size';

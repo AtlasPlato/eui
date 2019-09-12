@@ -2,7 +2,7 @@ import { CommonProps } from '../common';
 
 import { SFC, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   type FontSize = 's' | 'm' | 'l';
   type PaddingSize = 'none' | 's' | 'm' | 'l';
 

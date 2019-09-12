@@ -3,7 +3,7 @@ import { CommonProps } from '../../common';
 
 import { ReactNode, SFC, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   /**
    * @see './field_help_text.js'

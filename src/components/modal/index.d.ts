@@ -4,7 +4,7 @@ import { CommonProps, Omit } from '../common';
 import { FocusTarget } from 'focus-trap';
 import { ReactNode, SFC, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   /**
    * Modal type defs

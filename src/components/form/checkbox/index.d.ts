@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import { SFC, ReactNode, HTMLAttributes, ChangeEventHandler, InputHTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * checkbox type defs
    *

@@ -3,7 +3,7 @@ import { IconType } from '../icon';
 
 import { AnchorHTMLAttributes, ButtonHTMLAttributes, HTMLAttributes, MouseEventHandler, ReactNode, SFC } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   export const EuiKeyPadMenu: SFC<
     CommonProps & HTMLAttributes<HTMLDivElement>

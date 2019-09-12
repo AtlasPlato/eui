@@ -1,4 +1,4 @@
-import { EuiPanel, SIZES } from '@elastic/eui/lib/components/panel/panel.js';
+import { EuiPanel, SIZES } from '@atlastix/eui/lib/components/panel/panel.js';
 import { ControlType, PropertyControls } from 'framer';
 import * as React from 'react';
 import { FrameSize } from '../_framer_helpers/frame_size.tsx';

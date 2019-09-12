@@ -4,7 +4,7 @@ import { CommonProps, NoArgCallback } from '../common';
 import { FocusTarget } from 'focus-trap';
 import { SFC, ReactNode, HTMLAttributes } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * popover type defs
    *

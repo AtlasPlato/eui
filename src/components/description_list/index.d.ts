@@ -1,7 +1,7 @@
 import { HTMLAttributes, Component, ReactNode } from 'react';
 import { CommonProps } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   export type EuiDescriptionListType = 'row' | 'column' | 'inline';
   export type EuiDescriptionListAlignment = 'center' | 'left';
   export type EuiDescriptionListTextStyle = 'normal' | 'reverse';

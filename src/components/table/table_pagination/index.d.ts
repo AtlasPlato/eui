@@ -2,7 +2,7 @@ import { CommonProps } from '../../common';
 
 import { SFC } from 'react';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
   /**
    * table pagination type defs
    *

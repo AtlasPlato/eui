@@ -4,7 +4,7 @@ import { IconType } from '../icon'
 import { HTMLAttributes, MouseEventHandler, SFC, ReactNode } from 'react';
 import { CommonProps } from '../common';
 
-declare module '@elastic/eui' {
+declare module '@atlastix/eui' {
 
   type IconSide = 'left' | 'right';
 
