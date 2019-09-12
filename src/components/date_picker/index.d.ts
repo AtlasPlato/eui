@@ -61,6 +61,7 @@ declare module '@atlastix/eui' {
     start?: string;
     end?: string;
     isPaused?: boolean;
+    maxRangeHours?: number;
     refreshInterval?: number;
     onTimeChange: (props: OnTimeChangeProps) => void;
     onRefreshChange?: (props: OnRefreshChangeProps) => void;
