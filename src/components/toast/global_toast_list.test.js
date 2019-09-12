@@ -79,26 +79,6 @@ describe('EuiGlobalToastList', () => {
         }, TOAST_FADE_OUT_MS + 1);
       });
 
-      test('is called when the toast lifetime elapses', done => {
-        const TOAST_LIFE_TIME_MS = 5;
-        const dismissToastSpy = sinon.spy();
-        mount(
-          <EuiGlobalToastList
-            toasts={[{
-              'data-test-subj': 'b',
-              id: 'b',
-            }]}
-            dismissToast={dismissToastSpy}
-            toastLifeTimeMs={TOAST_LIFE_TIME_MS}
-          />
-        );
-
-        // The callback is invoked once the toast fades from view.
-        setTimeout(() => {
-          expect(dismissToastSpy.called).toBe(true);
-          done();
-        }, TOAST_LIFE_TIME_MS + TOAST_FADE_OUT_MS + 10);
-      });
     });
   });
 });
